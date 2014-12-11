@@ -15,14 +15,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     @IBOutlet weak var myMapView: MKMapView!
     
     var locationManager : CLLocationManager?
-    
     var circleOverlay : MKCircle?
     var circleRenderer : MKCircleRenderer?
     
+    //This functions sets the map to satellite view
     @IBAction func setSatelite(sender: AnyObject) {
         myMapView.mapType = MKMapType.Satellite
     }
     
+    //This functions sets the map to standard view
     @IBAction func setStandard(sender: AnyObject) {
         myMapView.mapType = .Standard
     }
